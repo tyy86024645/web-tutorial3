@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random Integer Generator</title>
+    <script src="randominteger.js" defer></script>
+</head>
+<body>
+    <h1>Random Integer Generator</h1>
+    <button id="1">Generate Random Integer</button>
+    <p id="result"></p>
+
+    <script>
+        document.getElementById("1").addEventListener("click", function() {
+            const randomNumber = randomInt();
+            document.getElementById("result").innerText = randomNumber;
+        });
+    </script>
+</body>
+</html>
